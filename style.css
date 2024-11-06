@@ -1,4 +1,15 @@
-/* - - - - - Estilos - - - - - */
+/* - - - - - Estilos pág - - - - - */
+
+* {
+    box-sizing: border-box;
+    margin: unset;
+    padding: unset;
+    border: unset;
+    outline: unset;
+    list-style: none;
+    text-decoration: none;
+}
+
 button {
     background-color: #04BF68;
     color: white;
@@ -11,8 +22,7 @@ button {
 
 p{
     font-size: 17;
-    font-family: Kdam Thmor Pro; 
-    
+    font-family: Kdam Thmor Pro;  
 }
 .blue-text {
     color: #030C26;;
@@ -22,32 +32,7 @@ p{
 }
 .dark-text {
     color: #1E1E1E;
-  }
-
-h1{
-   font-family: inria Sans;
-   font-size: 56px;
-   font-weight: bold;
-   color: #030C26;
 }
-
-h2{
-   font-family: Inter;
-   font-size: 20px;
-   font-weight: bold;
-   color: white;
-}
-
-h3{
-    font-family: inria Sans;
-    font-size: 20px;
-    font-weight: bold;
-    color: #1E1E1E;
-}
-
-ul li {
-    color: white;
-  }
 
 body {
     background-color: #030C26;
@@ -59,10 +44,47 @@ header nav{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   padding: 24px 75px;
 }
 
 header nav ul{
     display: flex;
-    align-items: center;
     gap: 70px;
 }
+
+/* - - - - - Jumbotron - - - - - */
+
+.jumbotron{
+padding: 31px 75px;
+background-image: url("/assets/Jumbotron.jpg");
+height: 882px;
+background-size: cover;
+background-position: center;
+}
+
+h1{
+    font-family: inria Sans;
+    font-size: 56px;
+    font-weight: bold;
+    color: #030C26;
+ }
+
+ /* - - - - - Main Body - - - - - */
+
+ h2{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+ }
+
+ h3{
+    font-family: inria Sans;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+
+ul li {
+    color: white;
+  }
