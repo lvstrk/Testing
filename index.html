@@ -13,20 +13,24 @@
         content="Discover Iceland's winter wonderland. Explore breathtaking glaciers, cozy winter villages, and the magical Northern Lights. Book your dream winter escape today!">
     <link rel="shortcut icon" href="/assets/pine.svg" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <title>Alpines</title>
+
+    /* - - - - - Font Styles - - - - - */
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kdam+Thmor+Pro&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <header class="Navbar">
-        <nav class=" Navbar_nav">
+        <nav class="Navbar_nav">
             <img src="/assets/pine.svg" alt="">
 
             <ul>
@@ -43,6 +47,7 @@
 
 
     <main>
+        <div class="container">
         <section class="jumbotron">
             <div class="swiper">
                 <h1>Embrace the Chill, Experience the Thrill.</h1>
@@ -50,7 +55,7 @@
                     snow-kissed landscapes
                     from the comfort of our exclusive lodges and chalets. Our curated tours offer a perfect blend of
                     relaxation and exploration.</p>
-                    
+
                 <div class="icon_next">
                     <img src="assets/Next page.png" alt="">
                     <img src="assets/Next page (1).png" alt="">
@@ -62,7 +67,7 @@
             <div>
                 <img src="/assets/Map.jpg" alt="">
             </div>
-            <div>
+            <div class="map_text">
                 <h2>Discover Iceland:</h2>
                 <p class="white-text"> Navigate through stunning locations, from the shimmering ice caves of Vatnajökull
                     National Park to the mesmerizing Northern Lights illuminating the night sky. Each click unveils
@@ -83,8 +88,8 @@
             </div>
         </section>
 
-        <section class="Section-places">
-            <div>
+        <section class="Section_places">
+            <div class="places_text">
                 <div>
                     <h2>Höfn</h2>
                     <p class="white-text">Nestled along the southeastern coast, Höfn is a gateway to breathtaking
@@ -151,8 +156,7 @@
                     <p class="white-text">3 nights</p>
                     <img src="assets/euro.svg" alt="">
                     <p class="white-text">300€</p>
-                    <p class="white-text">Book
-                        here ►</p>
+                    <p class="white-text">Book here ►</p>
                 </div>
             </div>
 
@@ -175,11 +179,9 @@
                     <p class="white-text">3 nights</p>
                     <img src="assets/euro.svg" alt="">
                     <p class="white-text">270€</p>
-                    <p class="white-text">Book
-                        here ►</p>
+                    <p class="white-text">Book here ►</p>
                 </div>
             </div>
-
             <div class="Package">
                 <div class="Package_info">
                     <h3>Bláfjöll Ski Package</h3>
@@ -204,33 +206,55 @@
                     <p class="white-text">2 nights</p>
                     <img src="assets/euro.svg" alt="">
                     <p class="white-text">250€</p>
-                    <p class="white-text">Book
-                        here ►</p>
+                    <p class="white-text">Book here ►</p>
                 </div>
-            </div>
+                <div class="Package">
+                    <div class="Package_info">
+                        <h3>Egilsstaðir Package</h3>
+                        <p class="dark-text">Experience the magic of Icelandic winter in Egilsstaðir. This 5-day package
+                            offers a unique blend of adventure and relaxation. Witness the breathtaking Northern Lights
+                            illuminating the night sky, embark on guided winter hikes through snow-covered landscapes,
+                            and explore the otherworldly formations of ice within a glacier cave. Thrill-seekers can
+                            enjoy snowmobiling across the vast wilderness, while those seeking tranquility can unwind in
+                            cozy guesthouses and soak in geothermal hot springs. Immerse yourself in the serenity of
+                            winter in Egilsstaðir, where nature's beauty takes center stage.</p>
+                    </div>
+                    <div class="Package_bar">
+                        <img src="assets/Location.svg" alt="">
+                        <p class="white-text">Egilsstaðir, Iceland</p>
+                        <img src="assets/food.svg" alt="">
+                        <p class="white-text">Included</p>
+                        <img src="assets/night.svg" alt="">
+                        <p class="white-text">5 nights</p>
+                        <img src="assets/euro.svg" alt="">
+                        <p class="white-text">400€</p>
+                        <p class="white-text">Book here ►</p>
+                    </div>
+                </div>
         </section>
+        </div>
     </main>
 
 
     <footer>
-        <section>
-            <div>
+        <section class="section_footer">
+            <div class="footer_decor">
                 <p class="white-text">Connect with us</p>
                 <img src="assets/arrow.svg" alt="">
             </div>
-            <div>
+            <div class="footer_icons">
                 <img src="assets/Facebook.svg" alt="">
                 <img src="assets/Instagram.svg" alt="">
                 <img src="assets/Twitter.png" alt="">
             </div>
-            <div>
+            <div class="footer_menu">
                 <ul>
                     <li>Home</li>
                     <li>Explore</li>
                     <li>About us</li>
                 </ul>
             </div>
-            <div>
+            <div class="footer_info">
                 <p class="white-text">Office</p>
                 <p class="white-text">Headquarters: Vatnajökull Glacier, Iceland</p>
             </div>
