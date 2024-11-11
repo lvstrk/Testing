@@ -10,7 +10,7 @@
     text-decoration: none;
 }
 
-button {
+.Navbar_nav button {
     background-color: #04BF68;
     color: white;
     font-size: 17px;
@@ -20,6 +20,13 @@ button {
     border: unset;
     width: 162px;
     height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    color: #030C26;
+    transform: scale(1.1);
 }
 
 p {
@@ -37,7 +44,7 @@ p {
 }
 
 .dark-text {
-    color: #1E1E1E;
+    color: #000000;
 }
 
 ul li {
@@ -128,17 +135,32 @@ header nav ul {
     height: 816px;
     background-size: cover;
     background-position: center;
-}
-
-.icon_next {
-    float: right;
+    transition: background-image 0.5s ease-in-out;
 }
 
 h1 {
-    font-family: inria Sans;
+    font-family: 'Inria Sans', sans-serif;
     font-size: 56px;
     font-weight: bold;
     color: #030C26;
+    transition: color 0.5s ease-in-out;
+}
+
+.icon_next {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.icon_next img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.icon_next img:hover {
+    opacity: 0.7;
 }
 
 /* - - - - - Main Body - - - - - */
@@ -193,19 +215,18 @@ h2 {
 /* - - - - - Packages - - - - - */
 
 .Section-Package {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    width: 100%;
-    max-width: 100%;
-    justify-items: center;
-    align-items: stretch;
-    padding-left: 10px;
+    gap: 10px;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding-bottom: 50px;
 }
 
 .Package {
     width: 100%;
-    max-width: 475px;
+    max-width: 450px;
     height: auto;
     margin: 0 auto;
     box-sizing: border-box;
@@ -213,7 +234,7 @@ h2 {
 
 .Package_info {
     text-align: center;
-    background-image: url("assets/Package-img.png");
+    background-image: url("assets/Package3.jpg");
     background-size: cover;
     padding: 41px 51px;
     gap: 8px;
@@ -226,6 +247,19 @@ h2 {
     gap: 5px;
 }
 
+.Package_bar button {
+    background-color: #04BF68;
+    color: white;
+    font-family: Kdam Thmor Pro;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    color: #030C26;
+    transform: scale(1.1);
+}
+
 /* - - - - - Footer - - - - - */
 
 footer {
@@ -233,7 +267,6 @@ footer {
     padding: 20px;
     background-color: #1E1E1E;
     color: white;
-    width: 190vh;
 }
 
 .section_footer {
